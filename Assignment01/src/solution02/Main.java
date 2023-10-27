@@ -105,7 +105,7 @@ public class Main {
 				System.out.println("Found as " + mid);
 				return mid;
 			}
-			else if(list.get(mid).getSal() < key.getSal())
+			else if(list.get(mid).getSal() > key.getSal())
 			{
 				left = mid +1;
 			}
