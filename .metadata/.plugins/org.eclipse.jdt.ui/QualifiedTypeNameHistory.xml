@@ -19,4 +19,7 @@
     <fullyQualifiedTypeName name="solution06.StackByQueue"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="solution07.QueueByStack"/>
+    <fullyQualifiedTypeName name="solution01.SinglyLinkedList.Node"/>
+    <fullyQualifiedTypeName name="solution02.SinglyCircularLinkedList.Node"/>
+    <fullyQualifiedTypeName name="solution03.LinkedList"/>
 </qualifiedTypeNameHistroy>
