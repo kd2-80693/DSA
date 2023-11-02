@@ -15,6 +15,10 @@ public class Main {
 		bt.preOrder();
 		bt.postOrder();
 		bt.inOrder();
+		bt.delete(10);
+		bt.preOrder();
+		bt.postOrder();
+		bt.inOrder();
 		
 		
 	}

@@ -55,18 +55,79 @@ public class BST {
 		
 	}
 	
+	
 	public void delete(int key , Node trav , Node parent)
 	{
+		while(trav!= null)
+		{
+			if(key == trav.data)
+				break;
+			else if(key < trav.data)
+			{
+				parent = trav;
+				trav = trav.left;
+				
+			}
+			else
+			{
+				parent = trav;
+				trav = trav.right;
+			}
+		}
 		if(trav == null)
 			return ;
-		if(trav == root)
-			if(trav.data == key)
-				root = null;
-			else
-				return;
 		else 
 		{
-			if(parent.)
+			
+			
+			if(trav.right != null && trav.left != null)
+			{
+				parent = trav;
+				Node succ = trav.right;
+				while(succ.left != null) {
+					parent = succ;
+					succ = succ.left;
+				}
+				trav.data = succ.data;
+				if(parent!=trav)
+					parent.left = succ.right;
+				else
+					parent.right = succ.right;
+
+			}
+			else if(trav.right == null)
+			{
+				if(trav == root)
+				{
+					root = trav.left;
+				}
+				else if(parent.left == trav)
+				{
+					parent.left = trav.left;
+				}
+				else
+				{
+					parent.right = trav.left;
+				}
+				
+			}
+			else
+			{
+				if(trav == root)
+				{
+					root = trav.right;
+				}
+				else if(parent.left == trav)
+				{
+					parent.left = trav.right;
+				}
+				else
+				{
+					parent.right = trav.right;
+				}
+					
+			}
+				
 		}
 	}
 	
@@ -133,14 +194,13 @@ public class BST {
 			return bSearch(key, trav.left);
 		else
 			return bSearch(key, trav.right);
-		
-		
 	}
 	
 	public Node binarySearch(int key)
 	{
 		return bSearch(key , root);
 	}
+	
 	
 	
 }
