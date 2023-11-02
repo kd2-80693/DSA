@@ -37,4 +37,8 @@
     <fullyQualifiedTypeName name="solution03.Deque"/>
     <fullyQualifiedTypeName name="soltuion04.BinaryTree.Node"/>
     <fullyQualifiedTypeName name="solution04.BinaryTree"/>
+    <fullyQualifiedTypeName name="BST"/>
+    <fullyQualifiedTypeName name="BST.Node"/>
+    <fullyQualifiedTypeName name="solution01.BST"/>
+    <fullyQualifiedTypeName name="solution01.BST.Node"/>
 </qualifiedTypeNameHistroy>
